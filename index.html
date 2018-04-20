@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple PDF Reader | Tudir</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="mw-100 mx-auto text-center">
+            <div class="w-100 mx-auto p-0" id="fileUpload">
+                <input type="file" name="file" id="pdfFile" class="inputfile" required/>
+                <label class="m-0 w-100 mx-auto text-center" for="pdfFile"><img class="img-fluid mx-auto" src="./assets/icons/upload.png" alt=""></label>
+                <small><em>Click and upload your file</em></small>
+            </div>
+            <div id="fileDetails" class="w-50">
+                <p id="pdfTitleP" class="text-left">You are reading:</p>
+                <p class="text-left"><em id="pdfTitle"></em></p>
+            </div>
+        </div>
+
+        <div class="w-75 mx-auto" id="fileCanvas">
+            <object class="mx-100" id="fileObject" data="" type="application/pdf" width="100%" height="100%">
+                <iframe class="mx-100" id="fileIframe" src="">
+                    This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>
+                </iframe>
+            </object>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap files-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="./js/displayfile.js"></script>
+</body>
+
+</html>
